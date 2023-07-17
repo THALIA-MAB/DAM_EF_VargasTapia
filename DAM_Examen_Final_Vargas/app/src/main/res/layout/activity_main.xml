@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C363219C"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/instagram" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Mis Notas"
+        android:textColor="#FF9800"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="282dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Correo Electrónico"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#FF9800"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Clave"
+        android:inputType="textPassword"
+        android:textColorHint="#FF9800"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#FF9800"
+        android:text="ENTRAR"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:srcCompat="@drawable/facebook" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogin"
+        app:srcCompat="@drawable/instagram2" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:srcCompat="@drawable/twitter" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
